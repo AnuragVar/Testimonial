@@ -35,6 +35,15 @@ const UserSchema: Schema<User> = new Schema({
     trim: true,
     unique: true,
   },
+  name:{
+    type: String,
+    required: [true, "Name is required!!"],
+    trim: true,
+  },
+  avatar: {
+    type: String, //url cloudnary
+    default:"https://img.freepik.com/premium-vector/man-avatar-profile-picture-vector-illustration_268834-538.jpg?size=338&ext=jpg&ga=GA1.1.1448711260.1706227200&semt=sph"
+  },
   email: {
     type: String,
     required: [true, "email is required!!"],
